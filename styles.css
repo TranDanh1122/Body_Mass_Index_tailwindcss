@@ -1091,6 +1091,19 @@ form[unit_type="imp"] fieldset[imp] {
     row-gap: 2rem;
   }
 
+  .mb\:rounded-md {
+    border-radius: 0.375rem;
+  }
+
+  .mb\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .mb\:rounded-r-\[0px\] {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .mb\:text-center {
     text-align: center;
   }

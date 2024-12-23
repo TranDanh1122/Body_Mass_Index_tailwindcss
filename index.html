@@ -20,6 +20,25 @@
     font-size: 16px;
     font-family: "Inter", sans-serif;
   }
+
+  @media (max-width:1024px) {
+
+    html,
+    body {
+      font-size: 14px;
+
+    }
+  }
+
+  @media (max-width:767px) {
+
+    html,
+    body {
+      font-size: 12px;
+
+    }
+  }
+
 </style>
 
 <body>
@@ -99,18 +118,19 @@
           </form>
           <div empty class="info text-white mt-8">
 
-            <div class="empty bg-blue rounded-r-[5rem] p-8">
+            <div class="empty bg-blue rounded-r-[5rem] p-8  mb:rounded-lg ">
               <h2 class="font-semibold text-[1.5rem]">Welcome</h2>
               <p class="text-[0.875rem] leading-[150%]">
                 Enter your height and weight and you’ll see your BMI result here
               </p>
             </div>
-            <div class="bmi bg-blue rounded-r-[5rem] p-8 flex flex-row gap-6 items-center justify-between ">
-              <div class="index">
+            <div
+              class="bmi bg-blue rounded-r-[5rem]  mb:rounded-lg p-8 flex flex-row gap-6 items-center justify-between mb:flex-wrap ">
+              <div class="index mb:w-full">
                 <span class="leading-[150%] font-semibold">Your BMI is...</span>
                 <h2 class="leading-[110%] font-semibold text-[4rem]" id="bmi_result">23.4</h2>
               </div>
-              <p class="more_info text-[0.875rem] leading-[150%]">
+              <p class="more_info text-[0.875rem] leading-[150%] mb:w-full">
                 Your BMI suggests you’re a healthy weight. Your ideal weight is between <strong id="suggests">63.3kgs -
                   85.2kgs</strong>
               </p>
@@ -129,7 +149,8 @@
         <h1 class="text-gunmetal leading-[110%] font-semibold text-[3rem] mb-8 mb:text-center">
           What your BMI result means
         </h1>
-        <p class="text-dark_electric_blue leading-[150%] mb:text-justify"> A BMI range of 18.5 to 24.9 is considered a 'healthy
+        <p class="text-dark_electric_blue leading-[150%] mb:text-justify"> A BMI range of 18.5 to 24.9 is considered a
+          'healthy
           weight.'
           Maintaining a
           healthy weight may lower your chances of experiencing health issues later on,
