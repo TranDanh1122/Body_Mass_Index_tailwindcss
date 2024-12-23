@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    fieldset[imp] {
+        display: none;
+    }
+    
+    form[unit_type="imp"] .form_group {
+        display: none;
+    }
+    
+    form[unit_type="imp"] fieldset[imp] {
+        display: flex;
+    }
+    .info .empty {
+        display: none;
+    }
+    
+    .info[empty] .bmi {
+        display: none;
+    }
+    
+    .info[empty] .empty {
+        display: block;
+    }
+}

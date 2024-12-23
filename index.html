@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Body Mass Index Calculator</title>
+</head>
+<style>
+  @font-face {
+    font-family: "Inter";
+    src: url(./starter-code/assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+  }
+
+  html,
+  body {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+</style>
+
+<body>
+  <header class=" w-[90%] max-w-[1160px] pt-20 pb-8 mx-auto relative z-10">
+    <img src="/starter-code/assets/images/logo.svg" alt="logo" class="w-16 h-16 object-cover ">
+  </header>
+  <main class="w-[90%] max-w-[1160px] h-full min-h-[100vh] mx-auto">
+    <section class="relative">
+      <div
+        class="overlay w-full h-[45rem] right-[25%] top-[-11rem] bg-gradient-to-br from-gradient_top to-gradient_bot absolute z-[-1] rounded-2xl">
+      </div>
+      <div class="hero flex flex-wrap gap-8 items-center relative z-10">
+        <div class="w-[calc(50%-1rem)]">
+          <h1 class="font-semibold text-[4rem] text-gunmetal leading-[110%]"> Body Mass Index Calculator</h1>
+          <p class="leading-[150%] text-dark_electric_blue "> Better understand your weight in relation to your height
+            using our
+            body mass index (BM) calculator. While BMI is not the sole determinant
+            of a healthy weight, it offers a valuable starting point to evaluate
+            your overall health and well-being.</p>
+        </div>
+        <div class="w-[calc(50%-1rem)] bg-white p-8 shadow-gradient_bot shadow-lg drop-shadow-sm rounded-xl">
+          <h2 class="font-semibold text-[1.5rem]  text-gunmetal">Enter your details below</h2>
+          <form action="#" class="flex flex-wrap flex-row gap-6 gap-y-8 mt-8">
+            <fieldset class="flex flex-nowrap gap-4 items-center justify-start w-full">
+              <label for="met" class="w-[calc(50%-.5rem)] flex flex-none items-center gap-4 leading-[150%] font-semibold">
+                <input type="radio" value="met" id="met" checked name="unit_type" class="w-8 h-8">
+                Metric
+              </label>
+              <label for="imp" class="w-[calc(50%-.5rem)] flex flex-none items-center gap-4 leading-[150%] font-semibold">
+                <input type="radio" value="imp" id="imp" name="unit_type" class="w-8 h-8">
+                Imperial
+              </label>
+            </fieldset>
+            <fieldset class="flex flex-nowrap flex-col gap-2 w-[calc(50%-0.75rem)] relative form_group">
+              <label class="text-dark_electric_blue" for="cm">Height</label>
+              <input type="text" name="cm" id="cm"
+                class=" w-full py-5 px-6 pr-12 outline-none border-solid border-[1px] border-dark_electric_blue rounded-md">
+              <span class="absolute text-blue text-[1.5rem] top-[50%] font-semibold right-4">cm</span>
+            </fieldset>
+            <fieldset class="flex flex-nowrap flex-col gap-2 w-[calc(50%-0.75rem)] relative form_group">
+              <label class="text-dark_electric_blue" for="kg">Weight</label>
+              <input type="text" name="kg" id="kg"
+                class="w-full py-5 px-6 pr-12  outline-none  border-[1px] border-solid border-dark_electric_blue rounded-md">
+              <span class="absolute text-blue text-[1.5rem] top-[50%] font-semibold right-4">kg</span>
+            </fieldset>
+
+
+            <fieldset imp class="flex flex-nowrap flex-col gap-2 w-[calc(50%-0.75rem)] relative form_group">
+              <label class="text-dark_electric_blue" for="ft">Height</label>
+              <input type="text" name="ft" id="ft"
+                class="w-full py-5 px-6 pr-12  outline-none  border-[1px] border-solid border-dark_electric_blue rounded-md">
+              <span class="absolute text-blue text-[1.5rem] top-[50%] font-semibold right-4">ft</span>
+            </fieldset>
+            <fieldset imp class="flex flex-nowrap flex-col gap-2 w-[calc(50%-0.75rem)] relative form_group">
+              <label class="text-dark_electric_blue" for="inc">&nbsp;</label>
+              <input type="text" name="inc" id="inc"
+                class="w-full py-5 px-6 pr-12  outline-none  border-[1px] border-solid border-dark_electric_blue rounded-md">
+              <span class="absolute text-blue text-[1.5rem] top-[50%] font-semibold right-4">inc</span>
+            </fieldset>
+            <fieldset imp class="flex flex-nowrap flex-col gap-2 w-[calc(50%-0.75rem)] relative form_group">
+              <label class="text-dark_electric_blue" for="st">Weight</label>
+              <input type="text" name="st" id="st"
+                class="w-full py-5 px-6 pr-12  outline-none  border-[1px] border-solid border-dark_electric_blue rounded-md">
+              <span class="absolute text-blue text-[1.5rem] top-[50%] font-semibold right-4">st</span>
+            </fieldset>
+            <fieldset imp class="flex flex-nowrap flex-col gap-2 w-[calc(50%-0.75rem)] relative form_group">
+              <label class="text-dark_electric_blue" for="lbs">&nbsp;</label>
+              <input type="text" name="lbs" id="lbs"
+                class="w-full py-5 px-6 pr-12  outline-none  border-[1px] border-solid border-dark_electric_blue rounded-md">
+              <span class="absolute text-blue text-[1.5rem] top-[50%] font-semibold right-4">lbs</span>
+            </fieldset>
+          </form>
+          <div empty class="info text-white mt-8">
+            <div class="empty bg-blue rounded-r-[5rem] p-8">
+              <h2 class="font-semibold text-[1.5rem]">Welcome</h2>
+              <p class="text-[0.875rem] leading-[150%]">
+                Enter your height and weight and you’ll see your BMI result here
+              </p>
+            </div>
+            <div class="bmi bg-blue rounded-r-[5rem] p-8 flex flex-row gap-6 items-center justify-between ">
+              <div class="index">
+                <span class="leading-[150%] font-semibold">Your BMI is...</span>
+                <h2 class="leading-[110%] font-semibold text-[4rem]" id="bmi_result">23.4</h2>
+              </div>
+              <p class="more_info text-[0.875rem] leading-[150%]">
+                Your BMI suggests you’re a healthy weight. Your ideal weight is between <strong id="suggests">63.3kgs -
+                  85.2kgs</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+  Height
+  Weight
+
+  Your BMI is...
+
+  <!-- add score -->
+
+  Your BMI suggests you're <!-- add classification -->.
+  Your ideal weight is between <!-- add range -->.
+
+  What your BMI result means
+
+  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+  healthy weight may lower your chances of experiencing health issues later on,
+  such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
+  fat and sugar content, incorporating ample fruits and vegetables. Additionally,
+  strive for regular physical activity, ideally about 30 minutes daily for
+  five days a week.
+
+  Healthy eating
+  Healthy eating promotes weight control, disease prevention, better digestion,
+  immunity, mental clarity, and mood.
+
+  Regular exercise
+  Exercise improves fitness, aids weight control, elevates mood, and reduces disease
+  risk, fostering wellness and longevity.
+
+  Adequate sleep
+  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
+  overall restoration and rejuvenation.
+
+  Limitations of BMI
+
+  Although BMI is often a practical indicator of healthy weight, it is not suited for
+  every person. Specific groups should carefully consider their BMI outcomes, and in
+  certain cases, the measurement may not be beneficial to use.
+
+  Gender
+  The development and body fat composition of girls and boys vary with age. Consequently,
+  a child's age and gender are considered when evaluating their BMI.
+
+  Age
+  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
+  body fat content.
+
+  Muscle
+  BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+  differentiate muscle from fat.
+
+  Pregnancy
+  Expectant mothers experience weight gain due to their growing baby. Maintaining a
+  healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
+  and child.
+
+  Race
+  Certain health concerns may affect individuals of some Black and Asian origins at
+  lower BMIs than others. To learn more, it is advised to discuss this with your
+  GP or practice nurse.
+
+</body>
+
+</html>
