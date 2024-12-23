@@ -23,24 +23,27 @@
 </style>
 
 <body>
-  <header class=" w-[90%] max-w-[1160px] pt-20 pb-8 mx-auto relative z-10">
-    <img src="/starter-code/assets/images/logo.svg" alt="logo" class="w-16 h-16 object-cover ">
+  <header class=" w-[90%] max-w-[1160px] pt-20 pb-8 mx-auto relative z-10 tb:w-full mb:w-full">
+    <img src="/starter-code/assets/images/logo.svg" alt="logo" class="w-16 h-16 object-cover tb:mx-auto mb:mx-auto">
   </header>
   <main class=" h-full min-h-[100vh] ">
-    <section class="relative w-[90%] max-w-[1160px] mx-auto">
+    <section class="relative w-[90%] max-w-[1160px] mx-auto tb:w-full mb:w-full">
       <div
-        class="overlay w-full h-[45rem] right-[25%] top-[-11rem] bg-gradient-to-br from-gradient_top to-gradient_bot absolute z-[-1] rounded-2xl">
+        class="overlay w-full h-[45rem] right-[25%] tb:right-0 mb:right-0 top-[-11rem] bg-gradient-to-br from-gradient_top to-gradient_bot absolute z-[-1] rounded-2xl">
       </div>
       <div class="hero flex flex-wrap gap-8 items-center relative z-10">
-        <div class="w-[calc(50%-1rem)]">
-          <h1 class="font-semibold text-[4rem] text-gunmetal leading-[110%]"> Body Mass Index Calculator</h1>
-          <p class="leading-[150%] text-dark_electric_blue "> Better understand your weight in relation to your height
+        <div class="w-[calc(50%-1rem)] tb:w-full mb:w-full">
+          <h1 class="font-semibold text-[4rem] text-gunmetal leading-[110%] tb:text-center mb:text-center"> Body Mass
+            Index Calculator</h1>
+          <p class="leading-[150%] text-dark_electric_blue tb:text-center mb:text-center"> Better understand your weight
+            in relation to your height
             using our
             body mass index (BM) calculator. While BMI is not the sole determinant
             of a healthy weight, it offers a valuable starting point to evaluate
             your overall health and well-being.</p>
         </div>
-        <div class="w-[calc(50%-1rem)] bg-white p-8 shadow-gradient_bot shadow-lg drop-shadow-sm rounded-xl">
+        <div
+          class="w-[calc(50%-1rem)] tb:w-[90%] mb:w-[90%] tb:mx-auto mb:mx-auto mb::w-[90%] bg-white p-8 shadow-gradient_bot shadow-lg drop-shadow-sm rounded-xl">
           <h2 class="font-semibold text-[1.5rem]  text-gunmetal">Enter your details below</h2>
           <form action="#" class="flex flex-wrap flex-row gap-6 gap-y-8 mt-8">
             <fieldset class="flex flex-nowrap gap-4 items-center justify-start w-full">
@@ -95,7 +98,7 @@
             </fieldset>
           </form>
           <div empty class="info text-white mt-8">
-          
+
             <div class="empty bg-blue rounded-r-[5rem] p-8">
               <h2 class="font-semibold text-[1.5rem]">Welcome</h2>
               <p class="text-[0.875rem] leading-[150%]">
@@ -116,15 +119,18 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-wrap gap-36 items-center justify-between w-[90%] max-w-[1160px] mx-auto mt-40 relative">
+    <section
+      class="flex flex-wrap gap-36 tb:gap-4 mb:gap-4 items-center justify-between w-[90%] max-w-[1160px] tb:w-full mb:w-full mx-auto mt-40 relative">
       <img src="./starter-code/assets/images/image-man-eating.webp" alt="image-man-eating"
-        class="w-[calc(60%-4.5rem)] object-cover h-full">
-      <div class="w-[calc(40%-4.5rem)]  mt-32">
-        <img src="./starter-code/assets/images/pattern-curved-line-left.svg" alt="pattern-curved-line-left" class="w-24 h-32 object-cover absolute top-[-2rem] right-0">
-        <h1 class="text-gunmetal leading-[110%] font-semibold text-[3rem] mb-8">
+        class="w-[calc(60%-4.5rem)] tb:w-[calc(40%-0.5rem)] mb:w-full object-cover h-full">
+      <div class="w-[calc(40%-4.5rem)] tb:w-[calc(60%-0.5rem)] mb:w-full  mt-32 mb:mt-0">
+        <img src="./starter-code/assets/images/pattern-curved-line-left.svg" alt="pattern-curved-line-left"
+          class="w-24 h-32 object-cover absolute top-[-2rem] right-0 tb:hidden mb:hidden">
+        <h1 class="text-gunmetal leading-[110%] font-semibold text-[3rem] mb-8 mb:text-center">
           What your BMI result means
         </h1>
-        <p class="text-dark_electric_blue leading-[150%] "> A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+        <p class="text-dark_electric_blue leading-[150%] mb:text-justify"> A BMI range of 18.5 to 24.9 is considered a 'healthy
+          weight.'
           Maintaining a
           healthy weight may lower your chances of experiencing health issues later on,
           such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
@@ -135,8 +141,8 @@
     </section>
     <section class="bg-gradient-to-br from-gradient_top to-gradient_bot_2 mt-24">
       <div
-        class="tips container max-w-[1160px] w-[90%] flex flex-nowrap gap-6 justify-center items-center mx-auto py-20">
-        <div class="tip w-[calc(33%-0.5rem)]">
+        class="tips container max-w-[1160px] w-[90%] flex flex-nowrap tb:flex-wrap mb:flex-wrap gap-6 justify-center items-center mx-auto py-20">
+        <div class="tip w-[calc(33%-0.5rem)] tb:w-full mb:w-full ">
           <img src="./starter-code/assets/images/icon-eating.svg" alt="eating" class="w-16 h-16 object-cover">
           <h2 class="text-gunmetal font-semibold text-[1.5rem] mt-12 mb-6">
             Healthy eating
@@ -145,7 +151,7 @@
             better digestion,
             immunity, mental clarity, and mood.</p>
         </div>
-        <div class="tip w-[calc(33%-0.5rem)]">
+        <div class="tip w-[calc(33%-0.5rem)] tb:w-full mb:w-full ">
           <img src="./starter-code/assets/images/icon-exercise.svg" alt="eating" class="w-16 h-16 object-cover">
           <h2 class="text-gunmetal font-semibold text-[1.5rem] mt-12 mb-6">
             Regular exercise
@@ -154,7 +160,7 @@
             mood, and reduces disease
             risk, fostering wellness and longevity.</p>
         </div>
-        <div class="tip w-[calc(33%-0.5rem)]">
+        <div class="tip w-[calc(33%-0.5rem)] tb:w-full mb:w-full ">
           <img src="./starter-code/assets/images/icon-sleep.svg" alt="eating" class="w-16 h-16 object-cover">
           <h2 class="text-gunmetal font-semibold text-[1.5rem] mt-12 mb-6">
             Adequate sleep
@@ -167,9 +173,9 @@
       </div>
     </section>
     <section class="container max-w-[1160px] w-[90%] mx-auto mt-[7.5rem]">
-      <div
-        class="limits grid grid-rows-[repeat(3,fit-content(14.5rem))] grid-cols-[repeat(6,fit-content(10rem))] gap-8 ">
-        <div class="content item1">
+      <div class="limits grid grid-rows-[repeat(3,fit-content(14.5rem))] grid-cols-[repeat(6,fit-content(10rem))] gap-8 
+        tb:flex tb:flex-wrap tb:justify-center tb:gap-4 mb:flex mb:flex-wrap  tb:gap-y-8 mb:gap-y-8">
+        <div class="content item1 tb:text-center mb:text-center">
           <h2 class="leading-[110%] font-semibold text-[3rem] text-gunmetal">Limitations of BMI</h2>
           <p class="leading-[150%] text-dark_electric_blue">
             Although BMI is often a practical indicator of healthy weight, it is not suited for
@@ -177,32 +183,36 @@
             certain cases, the measurement may not be beneficial to use.
           </p>
         </div>
-        <div class="limit item2 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8">
+        <div
+          class="limit item2 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8 tb:w-[calc(50%-0.5rem)] mb:w-full">
           <img src="./starter-code/assets/images/icon-gender.svg" alt="gender" class="w-8 h-8 object-cover">
           <h3 class="text-gunmetal font-semibold"> Gender</h3>
           <p class="leading-[150%] text-dark_electric_blue"> The development and body fat composition of girls and boys
             vary with age. Consequently,
             a child's age and gender are considered when evaluating their BMI.</p>
         </div>
-        <div class="limit item3">
+        <div class="limit item3 tb:hidden mb:hidden">
           <img src="./starter-code/assets/images/pattern-curved-line-right.svg" alt="gender"
             class="w-24 h-32 object-cover">
         </div>
-        <div class="limit item4 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8">
+        <div
+          class="limit item4 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8 tb:w-[calc(50%-0.5rem)] mb:w-full">
           <img src="./starter-code/assets/images/icon-age.svg" alt="gender" class="w-8 h-8 object-cover">
           <h3 class="text-gunmetal font-semibold"> Age</h3>
           <p class="leading-[150%] text-dark_electric_blue"> In aging individuals, increased body fat and muscle loss
             may cause BMI to underestimate
             body fat content.</p>
         </div>
-        <div class="limit item5 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8">
+        <div
+          class="limit item5 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8 tb:w-[calc(50%-0.5rem)] mb:w-full">
           <img src="./starter-code/assets/images/icon-muscle.svg" alt="gender" class="w-8 h-8 object-cover">
           <h3 class="text-gunmetal font-semibold"> Muscle</h3>
           <p class="leading-[150%] text-dark_electric_blue"> BMI may misclassify muscular individuals as overweight or
             obese, as it doesn't
             differentiate muscle from fat.</p>
         </div>
-        <div class="limit item6 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8">
+        <div
+          class="limit item6 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8 tb:w-[calc(50%-0.5rem)] mb:w-full">
           <img src="./starter-code/assets/images/icon-pregnancy.svg" alt="gender" class="w-8 h-8 object-cover">
           <h3 class="text-gunmetal font-semibold"> Pregnancy</h3>
           <p class="leading-[150%] text-dark_electric_blue"> Expectant mothers experience weight gain due to their
@@ -210,7 +220,8 @@
             healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
             and child.</p>
         </div>
-        <div class="limit item7 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8">
+        <div
+          class="limit item7 shadow-md shadow-gradient_bot drop-shadow-xl drop-shadow-gradient_bot_2 p-8 tb:w-[calc(50%-0.5rem)] mb:w-full">
           <img src="./starter-code/assets/images/icon-race.svg" alt="gender" class="w-8 h-8 object-cover">
           <h3 class="text-gunmetal font-semibold"> Race</h3>
           <p class="leading-[150%] text-dark_electric_blue"> Certain health concerns may affect individuals of some

@@ -13,14 +13,14 @@ module.exports = {
         "green": "#22C1C1",
         "pupple": "#9747FF",
         "yellow": "#FFC700",
-        "gradient_top" : "rgba(214, 252, 254, 0)",
-        "gradient_bot" : "rgba(214, 230, 254, 1)",
-        "gradient_bot_2" : "rgba(214, 230, 254, .25)"
+        "gradient_top": "rgba(214, 252, 254, 0)",
+        "gradient_bot": "rgba(214, 230, 254, 1)",
+        "gradient_bot_2": "rgba(214, 230, 254, .25)"
 
       },
       screens: {
-        "mb": {min:0, max:'767px'},
-        "tb": {min:"768px", max:'1024px'}
+        "mb": { min: '0px', max: '767px' },
+        "tb": { min: '768px', max: '1024px' }
       }
     },
   },
