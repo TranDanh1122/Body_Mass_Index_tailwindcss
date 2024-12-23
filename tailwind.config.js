@@ -17,6 +17,10 @@ module.exports = {
         "gradient_bot" : "rgba(214, 230, 254, 1)",
         "gradient_bot_2" : "rgba(214, 230, 254, .25)"
 
+      },
+      screens: {
+        "mb": {min:0, max:'767px'},
+        "tb": {min:"768px", max:'1024px'}
       }
     },
   },
