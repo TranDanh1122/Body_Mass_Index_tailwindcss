@@ -14,7 +14,8 @@ module.exports = {
         "pupple": "#9747FF",
         "yellow": "#FFC700",
         "gradient_top" : "rgba(214, 252, 254, 0)",
-        "gradient_bot" : "rgba(214, 230, 254, 1)"
+        "gradient_bot" : "rgba(214, 230, 254, 1)",
+        "gradient_bot_2" : "rgba(214, 230, 254, .25)"
 
       }
     },

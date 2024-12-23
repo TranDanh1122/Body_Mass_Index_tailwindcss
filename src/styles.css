@@ -24,4 +24,31 @@
     .info[empty] .empty {
         display: block;
     }
+    .item1 {
+        grid-area: 1/1/2/4;
+    }
+    
+    .item2 {
+        grid-area: 1/4/2/6;
+    }
+    
+    .item3 {
+        grid-area: 2/2/3/3;
+    }
+    
+    .item4 {
+        grid-area: 2/3/3/5;
+    }
+    
+    .item5 {
+        grid-area: 2/5/3/7;
+    }
+    
+    .item6 {
+        grid-area: 3/2/4/4;
+    }
+    
+    .item7 {
+        grid-area: 3/4/4/6;
+    }
 }
